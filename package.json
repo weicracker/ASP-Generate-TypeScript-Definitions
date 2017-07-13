@@ -1,0 +1,15 @@
+{
+  "name": "ASP-Generate-TypeScript-Definitions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:weicracker/ASP-Generate-TypeScript-Definitions.git",
+  "author": "jiwei <jiwei3778@bjsasc.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "mustache": "^2.3.0",
+    "rimraf": "^2.6.1"
+  }
+}
