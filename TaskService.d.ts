@@ -8,6 +8,12 @@
  * Do not edit the class manually.
  */
  declare namespace task {
+
+    interface testInterface{
+                //测试接口
+            'jiwei': string;
+    }
+
     class TaskService {
             public getMyTasks(now: string,):obs.Observable<JsonResultSXLOfCurUserInfoVO>;
     }
