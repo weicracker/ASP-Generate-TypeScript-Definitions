@@ -9,8 +9,9 @@ let filePath = args._[0]||"./template/tmp.json";
 let tmplPath = "./template/tsd.tmp.mustache";
 let typePath = "./template/type.mustache";
 console.log("开始读取json");
+let viewJson;
 try{
-    let viewJson = JSON.parse(fs.readFileSync(filePath, 'UTF-8'));
+    viewJson = JSON.parse(fs.readFileSync(filePath, 'UTF-8'));
 }catch(e){
     console.log("JSON文件不正确，请检查！")
     process.exit(0);
