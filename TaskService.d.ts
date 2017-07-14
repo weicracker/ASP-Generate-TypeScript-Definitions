@@ -15,6 +15,6 @@
     }
 
     class TaskService {
-            public getMyTasks(now: string,):obs.Observable<JsonResultSXLOfCurUserInfoVO>;
+            public getMyTasks(now?: string):obs.Observable<UserApi.JsonResultSXLOfCurUserInfoVO>;
     }
  }

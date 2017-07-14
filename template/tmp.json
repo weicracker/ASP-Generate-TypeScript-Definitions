@@ -2,7 +2,6 @@
     "spaceName":"task",
     "className":"TaskService",
     "description":"TaskService 服务",
-    "api":"TaskApi",
     "version":"1.0.0",
     "descriptions":[
         {
@@ -32,9 +31,10 @@
                 "description":"获取今天的任务",
                 "type": "string",
                 "required":true,
-                "isSingleton":false
+                "isSingleton":true,
+                "cardinality": "?"
             }],
-            "return":"JsonResultSXLOfCurUserInfoVO"
+            "return":"UserApi.JsonResultSXLOfCurUserInfoVO"
         }
     ]
 }

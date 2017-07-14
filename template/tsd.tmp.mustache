@@ -24,7 +24,7 @@
 
     class {{{className}}} {
         {{#methods}}
-            public {{name}}({{#parameters}}{{^isSingleton}}{{&name}}: {{type}},{{/isSingleton}}{{/parameters}}):obs.Observable<{{return}}>;
+            public {{name}}({{#parameters}}{{&name}}{{&cardinality}}: {{type}}{{^isSingleton}},{{/isSingleton}}{{/parameters}}):obs.Observable<{{return}}>;
         {{/methods}}
     }
  }
